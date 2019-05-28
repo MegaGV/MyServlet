@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>practice2.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherListServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherListServlet</servlet-name>
+        <url-pattern>/TeacherListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherCheckServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherCheckServlet</servlet-name>
+        <url-pattern>/TeacherCheckServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherEditServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherEditServlet</servlet-name>
+        <url-pattern>/TeacherEditServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherAddPreServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherAddPreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherAddPreServlet</servlet-name>
+        <url-pattern>/TeacherAddPreServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherAddServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherAddServlet</servlet-name>
+        <url-pattern>/TeacherAddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherSaveServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherSaveServlet</servlet-name>
+        <url-pattern>/TeacherSaveServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherDeleteAllServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherDeleteAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherDeleteAllServlet</servlet-name>
+        <url-pattern>/TeacherDeleteAllServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherDeleteServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherDeleteServlet</servlet-name>
+        <url-pattern>/TeacherDeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PageJumpServlet</servlet-name>
+        <servlet-class>practice2.servlet.PageJumpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageJumpServlet</servlet-name>
+        <url-pattern>/PageJumpServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherSortServlet</servlet-name>
+        <servlet-class>practice2.servlet.TeacherSortServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherSortServlet</servlet-name>
+        <url-pattern>/TeacherSortServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

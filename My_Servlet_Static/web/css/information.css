@@ -1,0 +1,51 @@
+#teacher_information_all{
+    width: 1229px;
+    height: 645px;
+
+    position: absolute;
+    left:154px;
+    top:8px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+}
+
+#teacher_information{
+    width: 550px;
+    height: 450px;
+
+    margin-left: 340px;
+    margin-top: 98px;
+
+    background-color: white;
+    border: #aeaeae 1px solid;
+}
+
+#teacher_information_title{
+    width: 550px;
+    height: 40px;
+    background-color: #555555;
+
+    margin: 0 auto;
+
+    font-weight: bold;
+    color:white;
+}
+
+#teacher_information_content{
+    width: 261px;
+    height: 353px;
+
+    margin:0 auto;
+    text-align: center;
+    line-height: 45px;
+}
+
+#teacher_information_bottom{
+    width: 550px;
+    height: 48px;
+
+    padding-top: 8px;
+    border-top: #a9a9a9 1px solid;
+
+}
