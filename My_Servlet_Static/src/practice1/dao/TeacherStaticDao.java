@@ -32,7 +32,7 @@ public class TeacherStaticDao implements TeacherDao {
         File file = new File("C:\\Users\\59565\\IdeaProjects\\My_Servlet\\web\\data.txt");
         try {
             FileWriter writer = new FileWriter(file, false);
-            List<Teacher> teacherList = getAllTeacher();
+            List<Teacher> teacherList = getTeachers();
             for (Teacher teacher : teacherList){
                 writer.write(teacher.getId() + " " + teacher.getName() + " " + teacher.getCollege() + " "
                         + teacher.getMajor() + " " + teacher.getBirthday() + " " + teacher.getSalary() + " \r\n");
@@ -43,7 +43,7 @@ public class TeacherStaticDao implements TeacherDao {
         }
     }
 
-    public List<Teacher> getAllTeacher()
+    public List<Teacher> getTeachers()
     {
         return new ArrayList<>(teachers.values());
     }
@@ -80,7 +80,7 @@ public class TeacherStaticDao implements TeacherDao {
     }
 
     public void sort(String sort){
-        List<Teacher> teacherList = getAllTeacher();
+        List<Teacher> teacherList = getTeachers();
 
         if(sort.equals("id")) {
             for (int i = 0; i < teacherList.size() - 1; i++) {

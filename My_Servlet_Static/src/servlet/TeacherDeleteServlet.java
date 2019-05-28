@@ -1,6 +1,8 @@
 package servlet;
 
+import factory.Factory;
 import practice1.service.TeacherServiceImp;
+import service.TeacherService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,7 +29,7 @@ public class TeacherDeleteServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String deletes = request.getParameter("deletes");
 
-        TeacherServiceImp service = new TeacherServiceImp();
+        TeacherService service = Factory.getInstance().getServiceFactory().getTeacherService();
         service.deleteTeacher(deletes);
 
         request.getRequestDispatcher("TeacherListServlet?page=1").forward(request, response);

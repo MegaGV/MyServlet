@@ -1,7 +1,9 @@
 package servlet;
 
 import entity.Teacher;
+import factory.Factory;
 import practice1.service.TeacherServiceImp;
+import service.TeacherService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,7 +30,7 @@ public class TeacherEditServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
 
-        TeacherServiceImp service = new TeacherServiceImp();
+        TeacherService service = Factory.getInstance().getServiceFactory().getTeacherService();
         Teacher teacher = service.findTeacherById(id);
 
         request.setAttribute("teacher", teacher);

@@ -6,7 +6,7 @@ import entity.Teacher;
 
 public interface TeacherDao {
 
-    List<Teacher> getAllTeacher();
+    List<Teacher> getTeachers();
 
     Teacher findTeacherById(String id);
 

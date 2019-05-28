@@ -10,10 +10,10 @@ import service.TeacherService;
 public class TeacherServiceImp implements TeacherService {
 
     @Override
-    public List<Teacher> getAllTeacher()
+    public List<Teacher> getTeachers()
     {
         TeacherDao dao = Factory.getInstance().getDaoFactory().getTeacherDao();
-        return dao.getAllTeacher();
+        return dao.getTeachers();
     }
 
     @Override

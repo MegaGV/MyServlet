@@ -1,7 +1,9 @@
 package servlet;
 
 import entity.Teacher;
+import factory.Factory;
 import practice1.service.TeacherServiceImp;
+import service.TeacherService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,10 +29,10 @@ public class TeacherAddPreServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TeacherServiceImp service = new TeacherServiceImp();
+        TeacherService service = Factory.getInstance().getServiceFactory().getTeacherService();
         List<String> ids = new ArrayList<>();
         {
-            List<Teacher> teachers = service.getAllTeacher();
+            List<Teacher> teachers = service.getTeachers();
             for (Teacher teacher : teachers)
                 ids.add(teacher.getId());
         }

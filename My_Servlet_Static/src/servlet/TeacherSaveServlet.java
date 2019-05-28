@@ -1,6 +1,8 @@
 package servlet;
 
+import factory.Factory;
 import practice1.service.TeacherServiceImp;
+import service.TeacherService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,7 +28,7 @@ public class TeacherSaveServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TeacherServiceImp service = new TeacherServiceImp();
+        TeacherService service = Factory.getInstance().getServiceFactory().getTeacherService();
         service.saveTeacher(request.getParameter("id"),
                 new String(request.getParameter("name").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8),
                 new String(request.getParameter("college").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8),

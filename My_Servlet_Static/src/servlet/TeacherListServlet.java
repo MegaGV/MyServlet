@@ -32,7 +32,7 @@ public class TeacherListServlet extends HttpServlet {
             request.getRequestDispatcher("login.jsp").forward(request, response);
 
         TeacherServiceImp service = new TeacherServiceImp();
-        List<Teacher> teachers = service.getAllTeacher();
+        List<Teacher> teachers = service.getTeachers();
 
         int page = Integer.valueOf(request.getParameter("page"));
         int num_every_page = 10;
