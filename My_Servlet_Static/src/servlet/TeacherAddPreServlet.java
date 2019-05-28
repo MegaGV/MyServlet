@@ -2,7 +2,6 @@ package servlet;
 
 import entity.Teacher;
 import factory.Factory;
-import practice1.service.TeacherServiceImp;
 import service.TeacherService;
 
 import javax.servlet.ServletException;

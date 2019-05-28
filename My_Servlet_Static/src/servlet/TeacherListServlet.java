@@ -9,7 +9,8 @@ import java.io.IOException;
 
 import java.util.List;
 import entity.Teacher;
-import practice1.service.TeacherServiceImp;
+import factory.Factory;
+import service.TeacherService;
 
 @WebServlet(name = "TeacherListServlet", urlPatterns = "/TeacherListServlet")
 public class TeacherListServlet extends HttpServlet {
@@ -31,7 +32,7 @@ public class TeacherListServlet extends HttpServlet {
         if(username == null)
             request.getRequestDispatcher("login.jsp").forward(request, response);
 
-        TeacherServiceImp service = new TeacherServiceImp();
+        TeacherService service = Factory.getInstance().getServiceFactory().getTeacherService();
         List<Teacher> teachers = service.getTeachers();
 
         int page = Integer.valueOf(request.getParameter("page"));
