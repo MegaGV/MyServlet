@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
-<%@ page import="practice1.entity.Teacher" %>
+<%@ page import="entity.Teacher" %>
 <html>
 <head>
     <title>TeacherList</title>
