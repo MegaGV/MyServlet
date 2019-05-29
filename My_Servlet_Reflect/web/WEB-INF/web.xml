@@ -9,7 +9,7 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>practice3.servlet.LoginServlet</servlet-class>
+        <servlet-class>servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>TeacherListServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherListServlet</servlet-class>
+        <servlet-class>servlet.TeacherListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherListServlet</servlet-name>
@@ -27,7 +27,7 @@
 
     <servlet>
         <servlet-name>TeacherCheckServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherCheckServlet</servlet-class>
+        <servlet-class>servlet.TeacherCheckServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherCheckServlet</servlet-name>
@@ -36,7 +36,7 @@
 
     <servlet>
         <servlet-name>TeacherEditServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherEditServlet</servlet-class>
+        <servlet-class>servlet.TeacherEditServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherEditServlet</servlet-name>
@@ -45,7 +45,7 @@
 
     <servlet>
         <servlet-name>TeacherAddPreServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherAddPreServlet</servlet-class>
+        <servlet-class>servlet.TeacherAddPreServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherAddPreServlet</servlet-name>
@@ -54,7 +54,7 @@
 
     <servlet>
         <servlet-name>TeacherAddServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherAddServlet</servlet-class>
+        <servlet-class>servlet.TeacherAddServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherAddServlet</servlet-name>
@@ -63,7 +63,7 @@
 
     <servlet>
         <servlet-name>TeacherSaveServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherSaveServlet</servlet-class>
+        <servlet-class>servlet.TeacherSaveServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherSaveServlet</servlet-name>
@@ -72,7 +72,7 @@
 
     <servlet>
         <servlet-name>TeacherDeleteAllServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherDeleteAllServlet</servlet-class>
+        <servlet-class>servlet.TeacherDeleteAllServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherDeleteAllServlet</servlet-name>
@@ -81,7 +81,7 @@
 
     <servlet>
         <servlet-name>TeacherDeleteServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherDeleteServlet</servlet-class>
+        <servlet-class>servlet.TeacherDeleteServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherDeleteServlet</servlet-name>
@@ -90,7 +90,7 @@
 
     <servlet>
         <servlet-name>PageJumpServlet</servlet-name>
-        <servlet-class>practice3.servlet.PageJumpServlet</servlet-class>
+        <servlet-class>servlet.PageJumpServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PageJumpServlet</servlet-name>
@@ -99,7 +99,7 @@
 
     <servlet>
         <servlet-name>TeacherSortServlet</servlet-name>
-        <servlet-class>practice3.servlet.TeacherSortServlet</servlet-class>
+        <servlet-class>servlet.TeacherSortServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TeacherSortServlet</servlet-name>
